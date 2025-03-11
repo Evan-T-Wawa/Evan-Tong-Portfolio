@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="about.css" />
 	<script src="script.js"></script>
 	<title> Evan Tong Portfolio </title>
 </head>
@@ -29,9 +30,14 @@
 			<li><a href="missing-media.html" class="nav-item">contect</a></li>
 		</ul>
 
-		<a href="javascript:void(0);" onclick="myFunction()" class="nav-button">
-			<img src="assets/Nav-button.png" style="width: 60px; height: 55px;">
-		</a>
+		<div class="nav-button">
+			<a href="javascript:void(0);" onclick="myFunction()" id="nav-button-closed">
+				<img src="assets/Nav-button.png" style="width: 60px; height: 55px;">
+			</a>
+			<a href="javascript:void(0);" onclick="myFunction()" id="nav-button-open">
+				<img src="assets/Nav-button-open.png" style="width: 60px; height: 55px;" >
+			</a>
+		</div>
 
 		<div id="items">
 			<ul class="nav-menu Azeret-Mono">

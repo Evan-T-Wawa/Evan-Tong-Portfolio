@@ -127,6 +127,10 @@ body{
         z-index: 101;
     }
 
+    #nav-button-open{
+        display: none;
+    }
+
     #items{
         position: absolute;
         right: 0;
