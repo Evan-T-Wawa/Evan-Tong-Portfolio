@@ -58,6 +58,22 @@ body{
     margin-right: 10%;
 }
 
+.nav-line-top{
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 450px;
+    top: 26px; right: 6%;
+}
+
+.nav-line-bottom{
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 515px;
+    top: 74px; right: 6%;
+}
+
 .nav-item{
     color: black;
     text-decoration: none;
@@ -73,11 +89,28 @@ body{
     display: none;
 }
 
-p{
-    margin: auto;
-    margin-top:  200px;
-    width: 60%;
-    font-size: 40px;
+
+/*screen responsive*/
+@media screen and (max-width: 1200px){
+    .nav-line-top{
+        width: 430px;
+    }
+    
+    .nav-line-bottom{
+        width: 495px;
+    }
+    
+    }
+
+@media screen and (max-width: 900px){
+.nav-line-top{
+    display: none;
+}
+
+.nav-line-bottom{
+    display: none;
+}
+
 }
 
 @media screen and (max-width: 800px){
@@ -101,10 +134,6 @@ p{
         background-color: rgb(123, 96, 96);
         width: 60%;
         height: 1500px;
-    }
-
-    .logo-text{
-        display: none;
     }
 
     .nav-menu{
