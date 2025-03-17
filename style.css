@@ -12,6 +12,15 @@ body{
 .Azeret-Mono{
     font-family: "Azeret Mono", monospace;
 }
+.Bitter{
+    font-family: "Bitter", serif;
+}
+
+/* colour */
+
+.red{
+    color: #D64D3F;
+}
 
 /* layout */
 
