@@ -37,14 +37,16 @@
 
 /* body */
 .content{
-    width: 470px;
-    margin-left: 13%;
+    width: 1060px;
+    margin: auto;
     margin-top: 200px;
-    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.hello{
-
+.text{
+    width: 470px;
+    padding-left: 40px;
 }
 
 .hello-text{
@@ -75,8 +77,27 @@
     top: -163px; left: 200px;
 }
 
+.image-box{
+    width: 520px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
 
+.image-colum1{
+    width: 47%;
+}
 
+.image-colum1{
+    width: 47%;
+}
+
+.images{
+    width: 247px;
+    margin-bottom: 20px;
+    border: solid 1px;
+}
 
 
 /*screen responsive*/
