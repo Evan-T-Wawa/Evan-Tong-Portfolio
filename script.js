@@ -17,5 +17,9 @@ function myFunction(){
 
 window.onresize = function() {
   var x = document.getElementById("items");
+  var y = document.getElementById("nav-button-open");
+  var z = document.getElementById("nav-button-closed");
   x.style.display = "none";
+  z.style.display = "block";
+  y.style.display = "none";
 }

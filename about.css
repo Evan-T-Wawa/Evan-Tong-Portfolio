@@ -1,3 +1,7 @@
+.about{
+    color: #B0A07E;;
+}
+
 .title-stars{
     width: fit-content;
     display: flex;
@@ -55,6 +59,14 @@
           zoom: 0.6;
       }
 }
+
+@media screen and (max-width: 800px){
+    .about{
+        background-color: #FEF7EB;
+        color: rgb(123, 96, 96);
+    }
+}
+
 
 @media screen and (max-width: 700px){
     .title{

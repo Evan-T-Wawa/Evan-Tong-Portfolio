@@ -90,6 +90,10 @@ body{
     text-transform: uppercase;
 }
 
+.nav-item:hover{
+    color: #B0A07E;
+}
+
 .nav-button{
     display: none;
 }
@@ -156,10 +160,18 @@ body{
     
     .menu-item{
         text-decoration: none;
-        color: white;
-        margin-left: 50px;
+        color: #FEF7EB;
+        padding-left: 50px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-right:300px ;
         line-height: 70px;
         font-size: 30px;
         text-transform: uppercase;
+    }
+
+    .menu-item:hover{
+        background-color: #FEF7EB;
+        color: rgb(123, 96, 96);
     }
 }
