@@ -10,9 +10,6 @@
     margin-left: auto;
 }
 
-.star1{
-}
-
 .star2{
     margin-top: 60px;
     margin-left: 40px;
@@ -36,6 +33,50 @@
     margin-top: -103px;
     margin-left: -200px;
 }
+
+/* body */
+.content{
+    width: 470px;
+    margin-left: 13%;
+    margin-top: 150px;
+    padding-left: 60px;
+}
+
+.hello{
+
+}
+
+.hello-text{
+    font-size: 100px;
+    font-weight: 900;
+}
+
+.hello-line{
+    position: relative;
+    top: -14px; left: 18px;
+    background-color: black;
+    height: 2px;
+    width: 400px;
+}
+
+.hello-star1{
+    position: relative;
+    top: -46px; left: -65px;
+}
+
+.hello-star2{
+    position: relative;
+    top: -179px; left: 217px;
+}
+
+.hello-star3{
+    position: relative;
+    top: -163px; left: 200px;
+}
+
+
+
+
 
 /*screen responsive*/
 @media screen and (max-width: 1200px){
