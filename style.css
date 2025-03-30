@@ -7,6 +7,15 @@ body{
     background-color: #FEF7EB;
 }
 
+p{
+    font-family: "Azeret Mono", monospace;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+
 /* fonts */
 
 .Azeret-Mono{

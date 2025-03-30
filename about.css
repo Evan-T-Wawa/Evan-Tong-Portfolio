@@ -49,6 +49,10 @@
     padding-left: 40px;
 }
 
+.hello{
+    margin-top: 45px;
+}
+
 .hello-text{
     font-size: 100px;
     font-weight: 900;
@@ -56,7 +60,7 @@
 
 .hello-line{
     position: relative;
-    top: -14px; left: 18px;
+    top: -98px; left: 18px;
     background-color: black;
     height: 2px;
     width: 400px;
@@ -64,7 +68,7 @@
 
 .hello-star1{
     position: relative;
-    top: -46px; left: -65px;
+    top: -44px; left: -65px;
 }
 
 .hello-star2{
@@ -77,6 +81,62 @@
     top: -163px; left: 200px;
 }
 
+h3{
+    color: #e53c29;
+    font-family: "Bitter", serif;
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+h4{
+    font-family: "Azeret Mono", monospace;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    width: 420px;
+    letter-spacing: 0.2px;
+}
+
+.intro-text{
+    margin-top: -60px;
+    width: 420px;
+}
+
+.list-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+    margin-top: -5px;
+}
+
+.list-item{
+    width: 390px;
+    margin-top: -12px;
+    margin-left: auto;
+    margin-right: 40px;
+    height: 120px;
+}
+
+.list-star{
+    margin-bottom: 10px;
+}
+
+.divider-line{
+    position: relative;
+    top:10px;
+    background-color: black;
+    height: 1px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.skill{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
 .image-box{
     width: 520px;
     height: 200px;
@@ -85,11 +145,7 @@
     height: fit-content;
 }
 
-.image-colum1{
-    width: 47%;
-}
-
-.image-colum1{
+.image-colum{
     width: 47%;
 }
 
@@ -111,6 +167,30 @@
         zoom: 0.8;
         margin-top: 170px;
     }
+
+    .content{
+        width: 790px;
+    }
+
+    .image-box{
+        width: 250px;
+    }
+
+    .image-colum2{
+        display: none;
+    }
+
+    .hello{
+        zoom: 0.8;
+    }
+
+    .hello-line{
+        top: -78px;
+      }
+
+      .intro-text{
+        margin-top: -52px;
+      }
 }
 
 @media screen and (max-width: 900px){
@@ -120,6 +200,30 @@
   
       .title-stars{
           zoom: 0.6;
+      }
+
+      .image-colum{
+        display: none;
+      }
+
+      .content{
+        width: 490px;
+    }
+
+    .hello{
+        zoom: 0.6;
+    }
+
+    .hello-line{
+        top: -58px;
+      }
+
+      .intro-text{
+        margin-top: -38px;
+      }
+
+      .content{
+        margin-top: 100px;
       }
 }
 
@@ -139,15 +243,15 @@
       .title-stars{
           zoom: 0.4;
       }
+
+      .content{
+        zoom: 0.7;
+        margin-top: 50px;
+      }
 }
 
-@media screen and (max-width: 600px){
-    .title{
-        zoom: 0.4;
-      }
-  
+@media screen and (max-width: 600px){  
       .title-stars{
-          zoom: 0.4;
           margin-right: 10%;
       }
 }
