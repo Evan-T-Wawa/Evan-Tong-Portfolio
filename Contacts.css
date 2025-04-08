@@ -1,0 +1,70 @@
+.contects{
+    color: #B0A07E;;
+}
+
+p{
+    font-family: "Bellota Text", sans-serif;
+    font-size: 16px;
+}
+
+a{
+    color: black;
+    text-decoration: underline 1px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contact-me{
+    width: 470px;
+    margin-top: 50px;
+}
+
+.contact-art{
+    width: 470px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.star1{
+    position: relative;
+    top: -53px; left: 220px;
+}
+
+.star2{
+    position: relative;
+    top: -70px; left: 215px;
+}
+
+.info{
+    margin-top: 20px;
+}
+
+.info-box{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.icon{
+    margin-right: 15px;
+    margin-top: -3px;
+}
+
+.item{
+    width: 100px;
+}
+
+@media screen and (max-width: 800px){
+    .contects{
+        background-color: #FEF7EB;
+        color: rgb(123, 96, 96);
+    }
+}

@@ -25,6 +25,10 @@ p{
     font-family: "Bitter", serif;
 }
 
+.Bellota{
+    font-family: "Bellota Text", sans-serif;
+}
+
 /* colour */
 
 .red{
@@ -49,9 +53,20 @@ p{
     margin-left: 13%;
 }
 
-.logo-cat{
-    width: 100px;
-    height: 100px;
+.logo-after{
+    display: none;
+}
+
+.logo-box{
+    height: 120px;
+}
+
+.logo-box:hover .logo-after{
+    display: block;
+}
+
+.logo-box:hover .logo-before{
+    display: none;
 }
 
 .logo-text{
