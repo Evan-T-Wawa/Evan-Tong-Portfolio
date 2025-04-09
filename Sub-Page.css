@@ -2,6 +2,39 @@
     color: #B0A07E;;
 }
 
+.title{
+    margin-left: 250px;
+    width: fit-content;
+    margin-top: -40px; 
+}
+
+.star{
+    display: flex;
+    justify-content: end;
+}
+
+h1{
+    font-size: 105px;
+    font-weight: 900;
+    justify-self: start;
+}
+
+.star1{
+    position: relative;
+    top: 195px; left: -75px;
+}
+
+.star2{
+    position: relative;
+    top: 10px; left: 40px;
+}
+
+.star3{
+    position: relative;
+    justify-self: end;
+    top: 43px; left: 25px;
+}
+
 @media screen and (max-width: 800px){
     .projects{
         background-color: #FEF7EB;

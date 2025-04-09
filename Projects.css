@@ -46,7 +46,9 @@ h1{
     height: 465px;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 h2{
     position: relative;
