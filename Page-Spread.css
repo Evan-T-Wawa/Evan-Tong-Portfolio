@@ -1,0 +1,156 @@
+.project{
+    margin-top: -30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+a{
+    color: black;
+}
+
+/* word boxes */
+
+h2{
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+    font-size: 100px;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+h3{
+    font-family: "Bitter", serif;
+    color: #e53c29;
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.RWordBox{
+    justify-self: right;
+    margin-right: 12%;
+    width: 350px;
+    margin-top: 50px;
+}
+
+.RWordCircle{
+    display: flex;
+    justify-content: right;
+}
+
+.skill-box{
+    display: flex;
+    border: solid 1px;
+    border-radius:  10% / 30%;
+    height: 35px;
+    width: 190px;
+    padding-top: 6px;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+
+.skills{
+    margin-top: 4px;
+    margin-left: 15px;
+}
+
+.discription{
+    margin-top: 60px;
+    width: 300px;
+}
+
+.time{
+    color: #7F8080;
+}
+
+
+/* images */
+
+.circle { 
+    z-index: -1;
+    position: relative;
+    border: solid 1px;  
+    border-radius: 50%;  
+    display: inline-block;
+}
+
+.circle-box{
+    display: flex;
+}
+
+.LImageBox{
+ margin-left: 14%;
+ margin-top: 150px;
+ margin-bottom: -4px;
+}
+
+/* 1 */
+.main-1{
+    border: solid 1px;
+    padding: 17px;
+    padding-bottom: 12px;
+    width: 640px;
+}
+
+.small-images-1{
+    margin-top: 40px;
+    margin-bottom: -30px;
+}
+
+.small-image-1{
+    width: 120px; 
+    margin-right: 13px;
+    border: solid 1px;
+    vertical-align: text-top;
+}
+
+
+@media screen and (max-width: 1450px){
+    .RWordBox{
+        margin-right: 6%;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .project{
+        zoom: 0.9;
+    }
+
+    .LImageBox{
+        margin-left: 13%;
+    }
+ 
+}
+
+@media screen and (max-width: 1200px){
+    .project{
+        zoom: 0.8;
+    }
+
+    .LImageBox{
+        margin-left: 14%;
+    }
+
+    .RWordBox{
+        margin-right: 7%;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+    .project{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        zoom: 1;
+    }
+
+    .LImageBox{
+        margin-left: -10px;
+    }
+}
+
+

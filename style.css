@@ -16,6 +16,15 @@ p{
     letter-spacing: 0.2px;
 }
 
+.divider-line{
+    position: relative;
+    top:15px;
+    background-color: black;
+    height: 1px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
 /* fonts */
 
 .Azeret-Mono{
@@ -29,10 +38,23 @@ p{
     font-family: "Bellota Text", sans-serif;
 }
 
+.Coquette{
+    font-family: "coquette", sans-serif;
+    font-weight: 400;
+}
+
 /* colour */
 
 .red{
     color: #e53c29;
+}
+
+.brown{
+    background-color: #D9D6D2;
+}
+
+.light-red{
+    background-color: #E5897C;
 }
 
 /* layout */
