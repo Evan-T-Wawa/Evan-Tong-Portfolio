@@ -3,7 +3,7 @@
 }
 
 .title{
-    margin-left: 250px;
+    margin-left: 17%;
     width: fit-content;
     margin-top: -40px; 
 }
@@ -35,9 +35,26 @@ h1{
     top: 43px; left: 25px;
 }
 
+@media screen and (max-width: 1200px){
+    .title{
+        zoom: 0.8;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .title{
+        margin: auto;
+    }
+}
+
 @media screen and (max-width: 800px){
     .projects{
         background-color: #FEF7EB;
         color: rgb(123, 96, 96);
+    }
+
+    .title{
+        zoom: 0.5;
+
     }
 }
