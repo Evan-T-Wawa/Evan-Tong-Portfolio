@@ -1,0 +1,28 @@
+.main-1{
+    border: solid 1px;
+    padding: 20px;
+    padding-bottom: 3px;
+    width: 610px;
+    margin-left: 40px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.outputs{
+    margin-bottom: 16px;
+    border: solid 1px;
+    width: 295px;
+}
+
+@media screen and (max-width: 1080px){
+    .P1{
+        margin-top: 100px;
+    }
+
+    .RWordCircle1{
+        position: relative;
+        top: 50px; left: -70px;
+    }
+}

@@ -57,8 +57,16 @@ p{
     background-color: #E5897C;
 }
 
+.light-yellow{
+    background-color: #fffcf6;
+}
+
 .black{
     background-color: black;
+}
+
+.yellow{
+    background-color: #E7BF82;
 }
 
 /* layout */
