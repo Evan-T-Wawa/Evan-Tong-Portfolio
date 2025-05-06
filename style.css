@@ -194,9 +194,13 @@ p{
         display: none;
     }
 
+    .logo{
+        margin-left: 40px;
+    }
+
     .nav-button{
         position: absolute;
-        top: 25px;
+        top: 30px;
         right: 40px;
         display: block;
         height: fit-content;
@@ -213,7 +217,7 @@ p{
         
         background-color: rgb(123, 96, 96);
         width: 60%;
-        height: 1500px;
+        height: 5000px;
     }
 
     .nav-menu{

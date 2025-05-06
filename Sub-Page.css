@@ -318,3 +318,36 @@ h3{
         zoom: 0.7;
     }
 }
+
+@media screen and (max-width: 450px){
+    .title{
+        zoom: 0.4;
+        margin-bottom: 70px;
+    }
+    
+    .LImageBox{
+        zoom: 0.5;
+    }
+
+    .RWordBox{
+        zoom: 0.6;
+        margin-left: 50px;
+    }
+
+    .RImageBox{
+        zoom: 0.5;
+    }
+
+    .LWordBox{
+        zoom: 0.6;
+        margin-left: 50px;
+    }
+
+    .PLine{
+        width: 350px;
+    }
+
+    .discription{
+        width: 340px;
+    }
+}

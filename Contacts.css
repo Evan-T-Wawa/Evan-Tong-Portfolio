@@ -14,8 +14,7 @@ a{
 
 .content{
     display: flex;
-    justify-content: space-between;
-    width: 1150px;
+    justify-content: space-around;
     margin: auto;
     margin-top: 100px;
 }
@@ -23,6 +22,8 @@ a{
 .contact-me{
     width: 470px;
     margin-top: 50px;
+    position: relative;
+    left: 50px;
 }
 
 .contact-art{
@@ -62,9 +63,40 @@ h1{
     width: 100px;
 }
 
+@media screen and (max-width: 1100px){
+    .content{
+        zoom: 0.8;
+    }
+
+    .contact-me{
+        margin-top: 200px;
+    }
+}
+
 @media screen and (max-width: 800px){
     .contects{
         background-color: #FEF7EB;
         color: rgb(123, 96, 96);
     }
+
+    .content{
+        zoom: 0.9;
+        margin-top: -50px;
+    }
+
+    .contact-me{
+        left: 20px;
+    }
+
+    .contact-art{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .content{
+        zoom: 0.7;
+        margin-top: -50px;
+    }
+   
 }
