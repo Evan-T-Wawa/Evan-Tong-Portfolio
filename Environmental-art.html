@@ -17,11 +17,11 @@
 </head>
 <body>
 
-	<div class="header">
+	<div id="header">
 		<div class="logo">
 			<div class="logo-box">
-				<img class="logo-cat logo-before" src="assets/Logo copy.png" style="width: 100px; height: 100px;">
-				<img class="logo-cat logo-after" src="assets/Logo_Blink copy.png" style="width: 100px; height: 100px;">
+				<img class="logo-cat logo-before display-img" src="assets/Logo copy.png" style="width: 100px; height: 100px;">
+				<a href="index.html"><img class="logo-cat logo-after" src="assets/Logo_Blink copy.png" style="width: 100px; height: 100px;"></a>
 			</div>
 
 			<div>
@@ -75,15 +75,43 @@
 
 			<div class="main-1 brown">
 				<div class="sub-1">
-					<img src="Environment/Birds.png" class="outputs" style=" height: 280px;">
-					<img src="Environment/under-the-dock.png" class="outputs" style=" height: 325px;">
-					<img src="Environment/Tiny_cat_2_resized.png" class="outputs" style="height: 280px;">
+					<img id="Img1" src="Environment/Birds.png" class="outputs display-img" style=" height: 280px;">
+					<div id="Modal1" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img01">
+					</div>
+
+					<img id="Img2" src="Environment/under-the-dock.png" class="outputs display-img" style=" height: 325px;">
+					<div id="Modal2" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img02">
+					</div>
+
+					<img id="Img3" src="Environment/Tiny_cat_2_resized.png" class="outputs display-img" style="height: 280px;">
+					<div id="Modal3" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img03">
+					</div>
 				</div>
 
 				<div class="sub-1" style="margin-top: -50px;"> 
-					<img src="Environment/sunken-world.png" class="outputs" style=" height: 280px;">
-					<img src="Environment/Road.png" class="outputs" style="height: 235px; margin-top: 45px;">
-					<img src="Environment/Mushroom-skull.png" class="outputs" style=" height: 280px; width: 196px">
+					<img id="Img4" src="Environment/sunken-world.png" class="outputs display-img" style=" height: 280px;">
+					<div id="Modal4" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img04">
+					</div>
+
+					<img id="Img5" src="Environment/Road.png" class="outputs display-img" style="height: 235px; margin-top: 45px;">
+					<div id="Modal5" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img05">
+					</div>
+
+					<img id="Img6" src="Environment/Mushroom-skull.png" class="outputs display-img" style=" height: 280px; width: 196px">
+					<div id="Modal6" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img06">
+					</div>
 				</div>
 			</div>
 
@@ -113,5 +141,19 @@
 
 	<div style="margin-bottom: 150px;"></div>
 
+	<script>
+		var modal1 = document.getElementById("Modal1");
+		var img1 = document.getElementById("Img1");
+		var modalImg1 = document.getElementById("img01");
+		img1.onclick = function(){
+			modal1.style.display = "block";
+			modalImg1.src = this.src;
+			console.log("clicked");
+		}
+		var span1 = document.getElementsByClassName("close")[0];
+		span1.onclick = function() { 
+		modal1.style.display = "none";
+		}
+		</script>
 </body>
 </html>

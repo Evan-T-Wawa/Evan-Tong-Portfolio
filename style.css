@@ -3,13 +3,9 @@
     margin: 0;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
 body{
     background-color: #FEF7EB;
+    overflow-x: hidden;
 }
 
 p{
@@ -19,6 +15,11 @@ p{
     margin-bottom: 20px;
     line-height: 20px;
     letter-spacing: 0.2px;
+}
+
+.display-img:hover{
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .divider-line{
@@ -59,7 +60,7 @@ p{
 }
 
 .light-red{
-    background-color: #E5897C;
+    background-color: #f58475;
 }
 
 .light-yellow{
@@ -74,9 +75,13 @@ p{
     background-color: #E7BF82;
 }
 
+.bright-yellow{
+    background-color: #ffbd7b;
+}
+
 /* layout */
 
-.header{
+#header{
     display: flex;
     position: sticky;
     top: 0px;
