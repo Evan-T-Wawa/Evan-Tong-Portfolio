@@ -26,3 +26,21 @@
         top: 50px; left: -70px;
     }
 }
+
+@media screen and (max-width: 550px){
+    .LImageBox{
+        zoom: 0.4;
+    }
+
+    .LImageBox{
+        zoom: 0.4;
+    }
+
+    .title{
+        zoom: 0.35;
+    }
+
+    .image-box2{
+        zoom: 0.3;
+    }
+}

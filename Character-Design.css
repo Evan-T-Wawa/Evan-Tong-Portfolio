@@ -1,0 +1,17 @@
+@media screen and (max-width: 550px){
+    .LImageBox{
+        zoom: 0.4;
+    }
+
+    .LImageBox{
+        zoom: 0.4;
+    }
+
+    .title{
+        zoom: 0.35;
+    }
+
+    .image-box2{
+        margin-left: 10%;
+    }
+}

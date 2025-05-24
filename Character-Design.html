@@ -79,10 +79,18 @@
 			
 			<div>
 				<img src="Character/Aster-pose.png" style="width: 270px; margin-left: -100px; margin-right: 10px; margin-top: 80px;">
-				<img src="Character/31f213fb210d8441ebad00961386b6c1.png" style="width: 450px; margin-bottom: 25px; border: solid 1px;">
+				<img src="Character/31f213fb210d8441ebad00961386b6c1.png" id="Img1" class="display-img" style="width: 450px; margin-bottom: 25px; border: solid 1px;">
+				<div id="Modal1" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+				</div>
 			</div>
 			<div style="margin-top: -15px;">
-				<img src="Character/Holly.png" style="width: 450px; border: solid 1px; margin-left: -35px; position: relative;">
+				<img src="Character/Holly.png" id="Img2" class="display-img" style="width: 450px; border: solid 1px; margin-left: -35px; position: relative;">
+				<div id="Modal2" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img02">
+				</div>
 				<img src="Character/Ivy_design.png" style="width: 350px; margin-top: -150px; margin-right: -100px; position: relative; z-index: -1; top: 60px; left: -70px;">
 			</div>
 		</div>
@@ -153,15 +161,96 @@
 			</div>
 
 			<div class="brown" style="padding: 20px; border: solid 1px;">
-				<img src="Character/Cloth_Practic.png" style="width: 600px; margin-bottom: 15px;">
+				<img src="Character/Cloth_Practic.png" id="Img3" class="display-img" style="width: 600px; margin-bottom: 15px;">
+				<div id="Modal3" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img03">
+				</div>
+
 				<div style="display: flex; justify-content: space-between;">
-					<img src="Character/Face_preactic.png" style="width: 290px;">
-					<img src="Character/Face_preactic2.png" style="width: 290px;">
+					<img src="Character/Face_preactic.png" id="Img4" class="display-img" style="width: 290px;">
+					<div id="Modal4" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img04">
+					</div>
+
+					<img src="Character/Face_preactic2.png" id="Img5" class="display-img" style="width: 290px;">
+					<div id="Modal5" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img05">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div style="margin-bottom:250px ;"></div>
+
+	<script>
+		var modal1 = document.getElementById("Modal1");
+		var img1 = document.getElementById("Img1");
+		var modalImg1 = document.getElementById("img01");
+		img1.onclick = function(){
+			modal1.style.display = "block";
+			modalImg1.src = this.src;
+			console.log("clicked");
+		}
+		var span1 = document.getElementsByClassName("close")[0];
+		span1.onclick = function() { 
+		modal1.style.display = "none";
+		}
+
+		var modal2 = document.getElementById("Modal2");
+		var img2 = document.getElementById("Img2");
+		var modalImg2 = document.getElementById("img02");
+		img2.onclick = function(){
+			modal2.style.display = "block";
+			modalImg2.src = this.src;
+			console.log("clicked");
+		}
+		var span2 = document.getElementsByClassName("close")[1];
+		span2.onclick = function() { 
+		modal2.style.display = "none";
+		}
+
+		var modal3 = document.getElementById("Modal3");
+		var img3 = document.getElementById("Img3");
+		var modalImg3 = document.getElementById("img03");
+		img3.onclick = function(){
+			modal3.style.display = "block";
+			modalImg3.src = this.src;
+			console.log("clicked");
+		}
+		var span3 = document.getElementsByClassName("close")[2];
+		span3.onclick = function() { 
+		modal3.style.display = "none";
+		}
+
+		var modal4 = document.getElementById("Modal4");
+		var img4 = document.getElementById("Img4");
+		var modalImg4 = document.getElementById("img04");
+		img4.onclick = function(){
+			modal4.style.display = "block";
+			modalImg4.src = this.src;
+			console.log("clicked");
+		}
+		var span4 = document.getElementsByClassName("close")[3];
+		span4.onclick = function() { 
+		modal4.style.display = "none";
+		}
+
+		var modal5 = document.getElementById("Modal5");
+		var img5 = document.getElementById("Img5");
+		var modalImg5 = document.getElementById("img05");
+		img5.onclick = function(){
+			modal5.style.display = "block";
+			modalImg5.src = this.src;
+			console.log("clicked");
+		}
+		var span5 = document.getElementsByClassName("close")[4];
+		span5.onclick = function() { 
+		modal5.style.display = "none";
+		}
+	</script>
 </body>
 </html>

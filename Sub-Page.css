@@ -18,8 +18,15 @@
   .modal-content {
     margin: auto;
     display: block;
-    height: 80%;
-    max-width: 700px;
+    height: 75%;
+  }
+
+    .modal-content.horizontal {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    width: 70%;
+    height: auto;
   }
   
   /* The Close Button */
@@ -267,6 +274,16 @@ h3{
 }
 
 @media screen and (max-width: 1080px){
+    .modal-content {
+        margin-top: 15%;
+        height: 45%;
+    }
+
+      .close {
+    font-size: 50px;
+  }
+
+    
     .title{
         margin: auto;
     }
@@ -350,6 +367,17 @@ h3{
 }
 
 @media screen and (max-width: 700px){
+  .modal-content {
+    margin-top: 30%;
+        height: 35%;
+        width: auto;
+    }
+
+      .close {
+    font-size: 80px;
+  }
+
+
     .LImageBox{
         zoom: 0.6;
     }

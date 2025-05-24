@@ -1,25 +1,19 @@
-.main-1{
-    border: solid 1px;
-    padding: 20px;
-    padding-bottom: 3px;
-    width: 665px;
-    margin-left: -20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.outputs{
-    width: 210px;
-    margin-bottom: 16px;
-}
-
-.P1{
-    margin-top: 0;
-}
-
 @media screen and (max-width: 1080px){
-    .P1{
-        margin-top: 100px;
+    .image-box2{
+        margin-left: 12%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .LImageBox{
+        zoom: 0.4;
+    }
+
+    .RImageBox{
+        zoom: 0.4;
+    }
+
+    .title{
+        zoom: 0.35;
     }
 }

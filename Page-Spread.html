@@ -75,9 +75,17 @@
 			</div>
 
 			<div style="border: solid 1px; padding: 15px; padding-bottom: 0px; width: fit-content; margin-left: 140px;" class="light-yellow">
-				<img src="Page-Spread/white1.png" style="width: 500px; margin-bottom: 10px;">
+				<img id="Img1" src="Page-Spread/white1.png" class="display-img" style="width: 500px; height: 100%; margin-bottom: 10px;">
+				<div id="Modal1" class="modal">
+					<span class="close">&times;</span>
+					<img class="modal-content" id="img01">
+				</div>
 			</div>
-			<img src="Page-Spread/white2.png" style="width: 300px; position: relative; top: -150px; border: solid 1px;">
+			<img src="Page-Spread/white2.png" id="Img2" class="display-img" style="width: 300px; position: relative; top: -150px; border: solid 1px;">
+			<div id="Modal2" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img02">
+					</div>
 			<img src="Page-Spread/graph.svg" style="width: 200px; position: relative; top: -440px; left: -355px;">
 			<img src="Page-Spread/graph2.svg" style="width: 430px; position: relative; top: -230px; left: 330px;">
 
@@ -150,10 +158,18 @@
 			</div>
 
 			<div class="image-box2 brown" style="margin-left: -135px; margin-right: 85px; z-index: -1;">
-				<img src="Page-Spread/website-1.png" style="width: 600px;">
+				<img src="Page-Spread/website-1.png" id="Img3" class="display-img" style="width: 600px;">
+				<div id="Modal3" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img03">
+					</div>
 			</div>
 			<div class="image-box2 brown" style="margin-top: -60px;">
-				<img src="Page-Spread/website-2.png" style="width: 550px;">
+				<img src="Page-Spread/website-2.png" id="Img4" class="display-img" style="width: 550px;">
+				<div id="Modal4" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img04">
+					</div>
 			</div>
 
 			<img src="Page-Spread/logo.svg" style="width: 140px; position: relative; z-index: 5; left: -160px; top: -320px;" >
@@ -169,18 +185,51 @@
 			</div>
 
 			<div class="main-1 brown"">
-				<img src="Page-Spread/1.png" style="width: 640px; margin-left: 0px;">
+				<img src="Page-Spread/1.png" id="Img5" class="display-img" style="width: 640px; margin-left: 0px;">
+				<div id="Modal5" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img05">
+					</div>
 			</div>
 
 			<div class="small-images-1">
-				<img src="Page-Spread/Banner1.png" class="small-image-1">
-				<img src="Page-Spread/Banner.png" class="small-image-1">
-				<img src="Page-Spread/Poster1.png"class="small-image-1">
-				<img src="Page-Spread/Auction-Program.png"class="small-image-1">
+				<img src="Page-Spread/Banner1.png" id="Img6" class="small-image-1 display-img">
+					<div id="Modal6" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img06">
+					</div>
+
+				<img src="Page-Spread/Banner.png" id="Img7" class="small-image-1 display-img">
+				<div id="Modal7" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img07">
+					</div>
+
+				<img src="Page-Spread/Poster1.png" id="Img8" class="small-image-1 display-img">
+					<div id="Modal8" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img08">
+					</div>
+
+				<img src="Page-Spread/Auction-Program.png" id="Img9" class="small-image-1 display-img">
+					<div id="Modal9" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content" id="img09">
+					</div>
+
 			</div>
 
-			<img src="Page-Spread/Bide1.png" class="" style="width: 270px; position: relative; top: -55px; left:310px; border: solid 1px;">
-			<img src="Page-Spread/Bid2.png" class="" style="width: 270px; border: solid 1px; position: relative; left: 90px;">
+			<img src="Page-Spread/Bide1.png" id="Img10" class="display-img" style="width: 270px; position: relative; top: -55px; left:310px; border: solid 1px;">
+			<div id="Modal10" class="modal">
+				<span class="close">&times;</span>
+				<img class="modal-content horizontal" id="img10">
+			</div>
+
+			<img src="Page-Spread/Bid2.png" id="Img11" class="display-img" style="width: 270px; border: solid 1px; position: relative; left: 90px;">
+			<div id="Modal11" class="modal">
+						<span class="close">&times;</span>
+						<img class="modal-content horizontal" id="img11">
+					</div>
 
 		</div>
 
@@ -215,5 +264,151 @@
 
 
 	<div style="margin-bottom:100px ;"></div>
+
+	<script>
+		var modal1 = document.getElementById("Modal1");
+		var img1 = document.getElementById("Img1");
+		var modalImg1 = document.getElementById("img01");
+		img1.onclick = function(){
+			modal1.style.display = "block";
+			modalImg1.src = this.src;
+			console.log("clicked");
+		}
+		var span1 = document.getElementsByClassName("close")[0];
+		span1.onclick = function() { 
+		modal1.style.display = "none";
+		}
+
+		var modal2 = document.getElementById("Modal2");
+		var img2 = document.getElementById("Img2");
+		var modalImg2 = document.getElementById("img02");
+		img2.onclick = function(){
+			modal2.style.display = "block";
+			modalImg2.src = this.src;
+			console.log("clicked");
+		}
+		var span2 = document.getElementsByClassName("close")[1];
+		span2.onclick = function() { 
+		modal2.style.display = "none";
+		}
+
+		var modal3 = document.getElementById("Modal3");
+		var img3 = document.getElementById("Img3");
+		var modalImg3 = document.getElementById("img03");
+		img3.onclick = function(){
+			modal3.style.display = "block";
+			modalImg3.src = this.src;
+			console.log("clicked");
+		}
+		var span3 = document.getElementsByClassName("close")[2];
+		span3.onclick = function() { 
+		modal3.style.display = "none";
+		}
+
+		var modal4 = document.getElementById("Modal4");
+		var img4 = document.getElementById("Img4");
+		var modalImg4 = document.getElementById("img04");
+		img4.onclick = function(){
+			modal4.style.display = "block";
+			modalImg4.src = this.src;
+			console.log("clicked");
+		}
+		var span4 = document.getElementsByClassName("close")[3];
+		span4.onclick = function() { 
+		modal4.style.display = "none";
+		}
+
+		var modal5 = document.getElementById("Modal5");
+		var img5 = document.getElementById("Img5");
+		var modalImg5 = document.getElementById("img05");
+		img5.onclick = function(){
+			modal5.style.display = "block";
+			modalImg5.src = this.src;
+			console.log("clicked");
+		}
+		var span5 = document.getElementsByClassName("close")[4];
+		span5.onclick = function() { 
+		modal5.style.display = "none";
+		}
+
+		var modal6 = document.getElementById("Modal6");
+		var img6 = document.getElementById("Img6");
+		var modalImg6 = document.getElementById("img06");
+		img6.onclick = function(){
+			modal6.style.display = "block";
+			modalImg6.src = this.src;
+			console.log("clicked");
+		}
+		var span6 = document.getElementsByClassName("close")[5];
+		span6.onclick = function() { 
+		modal6.style.display = "none";
+		}
+
+		var modal7 = document.getElementById("Modal7");
+		var img7 = document.getElementById("Img7");
+		var modalImg7 = document.getElementById("img07");
+		img7.onclick = function(){
+			modal7.style.display = "block";
+			modalImg7.src = this.src;
+			console.log("clicked");
+		}
+		var span7 = document.getElementsByClassName("close")[6];
+		span7.onclick = function() { 
+		modal7.style.display = "none";
+		}
+
+		var modal8 = document.getElementById("Modal8");
+		var img8 = document.getElementById("Img8");
+		var modalImg8 = document.getElementById("img08");
+		img8.onclick = function(){
+			modal8.style.display = "block";
+			modalImg8.src = this.src;
+			console.log("clicked");
+		}
+		var span8 = document.getElementsByClassName("close")[7];
+		span8.onclick = function() { 
+		modal8.style.display = "none";
+		}
+
+		var modal9 = document.getElementById("Modal9");
+		var img9 = document.getElementById("Img9");
+		var modalImg9 = document.getElementById("img09");
+		img9.onclick = function(){
+			modal9.style.display = "block";
+			modalImg9.src = this.src;
+			console.log("clicked");
+		}
+		var span9 = document.getElementsByClassName("close")[8];
+		span9.onclick = function() { 
+		modal9.style.display = "none";
+		}
+
+
+		var modal10 = document.getElementById("Modal10");
+		var img10 = document.getElementById("Img10");
+		var modalImg10 = document.getElementById("img10");
+		img10.onclick = function(){
+			modal10.style.display = "block";
+			modalImg10.src = this.src;
+			console.log("clicked");
+		}
+		var span10 = document.getElementsByClassName("close")[9];
+		span10.onclick = function() { 
+		modal10.style.display = "none";
+		}
+
+		var modal11 = document.getElementById("Modal11");
+		var img11 = document.getElementById("Img11");
+		var modalImg11 = document.getElementById("img11");
+		img11.onclick = function(){
+			modal11.style.display = "block";
+			modalImg11.src = this.src;
+			console.log("clicked");
+		}
+		var span11 = document.getElementsByClassName("close")[10];
+		span11.onclick = function() { 
+		modal11.style.display = "none";
+		}
+	</script>
 </body>
 </html>
