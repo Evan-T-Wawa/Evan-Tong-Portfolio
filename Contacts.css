@@ -1,5 +1,5 @@
 .contects{
-    color: #B0A07E;;
+    color: #B0A07E;
 }
 
 p{
@@ -23,11 +23,12 @@ a{
     width: 470px;
     margin-top: 50px;
     position: relative;
-    left: 50px;
+    left: 100px;
 }
 
 .contact-art{
     width: 470px;
+    margin-right: 250px;
 }
 
 h1{
@@ -63,13 +64,26 @@ h1{
     width: 100px;
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1300px){
     .content{
         zoom: 0.8;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1080px){
+    .content{
+        zoom: 1;
+        flex-wrap: wrap;
     }
 
     .contact-me{
-        margin-top: 200px;
+        left: 0;
+    }
+
+    .contact-art{
+        margin-top: 100px;
+        margin-left: 0px;
     }
 }
 
@@ -82,21 +96,26 @@ h1{
     .content{
         zoom: 0.9;
         margin-top: -50px;
+        margin-top: 50px;
     }
 
     .contact-me{
         left: 20px;
     }
 
-    .contact-art{
-        display: none;
+ 
+}
+
+@media screen and (max-width: 700px){
+    .content{
+        zoom: 0.7;
+        margin-top: 50px;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
     .content{
-        zoom: 0.7;
-        margin-top: -50px;
+        zoom: 0.6;
+        margin-top: 50px;
     }
-   
 }
