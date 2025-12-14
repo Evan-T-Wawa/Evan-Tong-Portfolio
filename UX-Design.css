@@ -1,0 +1,22 @@
+.outputs{
+    width: 210px;
+    margin-bottom: 16px;
+}
+
+/* 2 */
+.image-box2{
+    padding: 17px;
+    border: solid 1px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.P1{
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1080px){
+    .P1{
+        margin-top: 100px;
+    }
+}

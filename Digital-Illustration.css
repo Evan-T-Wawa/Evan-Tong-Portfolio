@@ -1,35 +1,49 @@
-.main-1{
+.main-3{
     border: solid 1px;
     padding: 20px;
     padding-bottom: 3px;
-    width: 610px;
-    margin-left: 40px;
-    margin-top: 50px;
+    width: 665px;
+    margin-left: -20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.outputs{
-    margin-bottom: 16px;
+.main-4{
     border: solid 1px;
-    width: 295px;
+    padding: 20px;
+    padding-bottom: 3px;
+    width: 665px;
+    margin-left: -20px;
 }
 
-.p2{
-    margin-bottom: -200px;
+.sub-4{
+    display: flex;
+    justify-content: space-between;
 }
+
+.outputs{
+    width: 210px;
+    margin-bottom: 16px;
+}
+
+.env_art{
+    margin-bottom: 16px;
+    border: solid 1px;
+}
+
 
 @media screen and (max-width: 1080px){
     .P1{
         margin-top: 100px;
     }
+    
+    .P4{
+        margin-top: 300px;
 
-    .RWordCircle1{
-        position: relative;
-        top: 50px; left: -70px;
     }
 }
+
 
 @media screen and (max-width: 550px){
     .LImageBox{
@@ -45,6 +59,10 @@
     }
 
     .image-box2{
-        zoom: 0.3;
+        margin-left: 10%;
+    }
+
+   .RImageBox{
+        zoom: 0.4;
     }
 }
